@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlixApp.Categorias.Comedia"
+             xmlns:local="clr-namespace:EtecFlixApp; assembly=EtecFlixApp"
+             BackgroundColor="#2f2f30">
+
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters} "/>
+
+            <ScrollView>
+
+                <Grid Padding="5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Source="{local:ImageResurce EtecFlixApp.Posters.capitamarvel.jpg}" !-->
+                    <ImageButton x:Name="btnCapitaMarvel"
+                                 Grid.Row="0" Grid.Column="0"                                 
+                                 Style="{StaticResource ButtonPosters}" />
+
+                    <ImageButton x:Name="btnPanteraNegra"
+                                 Grid.Row="0" Grid.Column="1" 
+                                 Style="{StaticResource ButtonPosters}" />
+
+                    <ImageButton x:Name="btnShazam"
+                                 Grid.Row="1" Grid.Column="0" 
+                                 Style="{StaticResource ButtonPosters}" />
+
+                    <ImageButton x:Name="btnAlladin"
+                                 Grid.Row="1" Grid.Column="1" 
+                                 Style="{StaticResource ButtonPosters}" />
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

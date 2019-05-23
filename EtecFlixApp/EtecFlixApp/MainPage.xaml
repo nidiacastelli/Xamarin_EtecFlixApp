@@ -1,14 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:EtecFlixApp"
-             x:Class="EtecFlixApp.MainPage">
+             xmlns:local="clr-namespace:EtecFlixApp;"             
+             x:Class="EtecFlixApp.MainPage"
+             BackgroundColor="#2f2f30">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
 
+        <Image x:Name="logo" HeightRequest="150" />
+
+        <ScrollView>
+
+            <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button Text="Aventura"
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Aventura" />
+
+                <Button Text="Comedia"
+                        Grid.Row="0" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Comedia" />
+
+                <Button Text="Drama"
+                        Grid.Row="1" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Drama" />
+
+                <Button Text="Terror"
+                        Grid.Row="1" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Btn_Open_Terror" />
+
+                <Button Text="Ficação Científica"
+                        Grid.Row="2" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Suspense"
+                        Grid.Row="2" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Infantil"
+                        Grid.Row="3" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Animação"
+                        Grid.Row="3" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Documentário"
+                        Grid.Row="4" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Guerra"
+                        Grid.Row="4" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Nacional"
+                        Grid.Row="5" Grid.Column="0"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+
+                <Button Text="Romance"
+                        Grid.Row="5" Grid.Column="1"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                         />
+            </Grid>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>
